@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 "/>
+    <link rel="stylesheet" href="style.css">
+    
+   
+    <title>Trello app</title>
+</head>
+<body>
+    <div class="container">
+        <main>
+                <div class="card first" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h3>Backlog</h3>
+                    
+                    <div class="add">+ Add</div>
+                    <div class="input-wrap">
+                    <input type="text" class="backlog" autocomplete="on">
+                    <button class="save backlog-s">Save</button>
+                </div>
+                </div>
+                <div class="card second" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h3>In Progress</h3>
+                    
+                    <div class="add ">+ Add</div>
+                    
+                    <div class="input-wrap">
+                        <input type="text" class="progress" autocomplete="on">
+                        <button class="save progress-s">Save</button>
+                    </div>
+                </div>
+                <div class="card third" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h3>Complete</h3>
+                    
+                    <div class="add ">+ Add</div>
+                    <div class="input-wrap">
+                    <input type="text" class="complete" autocomplete="on">
+                    <button class="save complete-s">Save</button>
+                </div>
+                </div>
+                <div class="card fourth" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <h3>On Hold</h3>
+                   
+                    <div class="add ">+ Add</div> 
+                    <div class="input-wrap">
+                    <input type="text" class="onhold" autocomplete="on">
+                    <button class="save on-hold-s">Save</button>
+                </div>
+                </div> 
+        </main>
+    </div>
+
+</body>
+
+<script src="main.js"></script>
+</html>

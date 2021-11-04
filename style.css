@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: white;
+   
+}
+.container{
+    background-image: url('./alps.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center ;
+   padding: 5%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    padding: 4% 7%;
+    column-gap: 1em;
+    background-color: rgb(0 0 0 / 69%);
+    height: 100vh;
+    
+}
+    
+h3{
+    background-color: #efa55e;
+    
+    text-align: center;
+    padding: 4%;
+   font-weight: 100;
+    letter-spacing: 5px;
+    
+}
+input{
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    padding: 3%;
+    width: 94%;
+}
+.input-wrap{
+    display: none;
+    flex-direction: column;
+}
+.show{
+    display: flex;
+}
+.add{
+    cursor: pointer;
+}
+.add:hover{
+    font-weight: bold;
+}
+.taskStyle{
+    background-color: #4115102e;
+    cursor: grab;
+    padding: 6%;
+    margin: 6%;
+}
+.save{
+    border: none;
+    font-family: inherit;
+    background-color: #4791ffa1;
+    color:white;
+    padding: 1% 5%;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 2%;
+}
+/* -----------------------------Media-------------------------------------------------------------- */
+@media (max-width:500px){
+
+   main{
+    grid-template-columns: none;
+} 
+}
